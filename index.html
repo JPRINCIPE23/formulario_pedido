@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Venta</title>
+</head>
+<body>
+    <section class="form_register">
+        <h1>Formulario de Pedido</h1>
+        <h3>Datos del Cliente</h3>
+        <input class="controls" type="text" name="cliente" id="cliente" placeholder="Ingrese el cliente">
+        <input class="controls" type="text" name="contacto" id="contacto" placeholder="Ingrese el contacto">
+        <input class="controls" type="number" name="celular" id="celular" placeholder="Ingrese celular de contacto" pattern="[9-0]+">
+        <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese Direccion de envio">
+        <select class="controls" name="" id="facturacion">
+            <option>Facturacion</option>
+            <option>Con Factura</option>
+            <option>Sin Factura</option>
+        </select>
+        <input class="controls" type="date" name="fecha" id="fecha" placeholder="Fecha despacho">
+        <select class="controls" name="" id="prioridad">
+            <option>Tipo de Prioridad</option>
+            <option>Prioridad N° 01</option>
+            <option>Prioridad N° 02</option>
+            <option>Prioridad N° 03</option>
+            <option>Prioridad N° 04</option>
+        </select>
+        <h3>Descripcion del Pedido</h3>
+        <select class="controls" name="" id="prenda">
+            <option>Descripcion del Producto</option>
+            <option>Mandilon</option>
+            <option>Mameluco</option>
+            <option>Chaqueta</option>
+            <option>Pantalon</option>
+            <option>Chaqueta + Pantalon</option>
+            <option>Kits 5 Piezas ( Chaqueta + Pantalon + Toca + Cubre Zapato + Mascarilla )</option>
+            <option>Toca Gusano</option>
+            <option>Gorro de Cirujano</option>
+            <option>Cubre Zapato</option>
+            <option>Cubre Botas</option>
+            <option>Sabana 2.15 mt x 0.80 cm</option>
+            <option>Campo Quirurgico 1 mt x 1 mt</option>
+            <option>Mascarilla 3 Pliegues</option>
+            <option>Mascarillas KN</option>
+            <option>Faciales</option>
+        </select>
+        <select class="controls" name="" id="tela">
+            <option>Tela del Producto</option>
+            <option>Notex quirurgico</option>
+            <option>Taslan</option>
+        </select>
+        <select class="controls" name="" id="gramaje">
+            <option>Gramaje del Producto</option>
+            <option>Proceso S 30 GR</option>
+            <option>Proceso S 40 GR</option>
+            <option>Proceso S 50 GR</option>
+            <option>Proceso S 60 GR</option>
+            <option>Proceso S 80 GR</option>
+            <option>Proceso SS 30 GR</option>
+            <option>Proceso SS 40 GR</option>
+            <option>Proceso SS 50 GR</option>
+            <option>Proceso SS 60 GR</option>
+            <option>Proceso SS 80 GR</option>
+            <option>Proceso SMS 30 GR</option>
+            <option>Proceso SMS 40 GR</option>
+            <option>Proceso SMS 50 GR</option>
+            <option>Proceso SMS 60 GR</option>
+            <option>Proceso SMS 80 GR</option>
+        </select>
+        <select class="controls" name="" id="marca">
+            <option>Marca del Producto</option>
+            <option>R&G</option>
+            <option>VACRIBEN</option>
+            <option>OTROS</option>
+            <option>Fabricacion</option>
+        </select>
+        <input class="color" type="text" name="color" id="color" placeholder="Ingrese el color">
+        <select class="controls" name="" id="unidad">
+            <option>Unidad de Medida</option>
+            <option>Unidad</option>
+            <option>Pack</option>
+            <option>Kits</option>
+            <option>Caja</option>
+            <option>Bolsa</option>
+        </select>
+        <h4>Tallas</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <input class="tallas" type="number" name="talla" id="tallas" placeholder="T-S" pattern="[9-0]+">
+                    <th></th>
+                    <input class="tallass" type="number" name="talla" id="tallam" placeholder="T-M" pattern="[9-0]+">
+                    <th></th>
+                    <input class="tallass" type="number" name="talla" id="tallal" placeholder="T-L" pattern="[9-0]+">
+                    <th></th>
+                    <input class="tallass" type="number" name="talla" id="tallaxl" placeholder="T-XL" pattern="[9-0]+">
+                    <th></th>
+                    <input class="tallass" type="number" name="talla" id="tallau" placeholder="T-U" pattern="[9-0]+">
+                </tr>
+            </thead>
+        </table>
+        <input class="controls" type="number" name="suma" id="suma" placeholder="Suma Total" pattern="[9-0]+">
+        <input class="controls" type="number" name="precio" id="precio" placeholder="Ingrese el precio" pattern="[9-0]+">
+        <input class="controls" type="number" name="total" id="total" placeholder="Total a Cobrar" pattern="[9-0]+">
+        <h3>Tipo de Empaque</h3>
+        <select class="controls" name="" id="sellado">
+            <option>Tipo de Sellado</option>
+            <option>Con Cintero</option>
+            <option>Termosellado</option>
+        </select>
+        <select class="controls" name="" id="tallero">
+            <option>Tallero</option>
+            <option>Con Tallero</option>
+            <option>Sin Tallero</option>
+        </select>
+        <select class="controls" name="" id="encajado">
+            <option>Tipo de Encajado</option>
+            <option>Caja</option>
+            <option>Fardo</option>
+            <option>Caja + Stril Fill</option>
+            <option>Fardo + Stril Fill</option>
+        </select>
+        <h3>Medio de Pago</h3>
+        <select class="controls" name="" id="medio">
+            <option>Ingrese Medio de Pago</option>
+            <option>Transferencia</option>
+            <option>Deposito en Cuenta</option>
+            <option>Yape</option>
+            <option>Efectivo</option>
+            <option>Por Confirmar</option>
+            <option>Paga Contra-Entrega</option>
+            <option>Debe</option>
+        </select>
+        <select class="controls" name="" id="banco">
+            <option>Tipo de Banco</option>
+            <option>BCP FAMITEX</option>
+            <option>BBVA FAMITEX</option>
+            <option>iNTERBANK FAMITEX</option>
+            <option>BCP OSHIN</option>
+            <option>OTROS</option>
+        </select>
+        <input class="controls" type="number" name="importe" id="importe" placeholder="Ingrese el importe pagado" pattern="[9-0]+">
+        <input class="controls" type="number" name="saldo" id="saldo" placeholder="Saldo Pendiente" pattern="[9-0]+">
+        <input class="botons" type="submit" id="send" value="Enviar por WhatsApp">
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

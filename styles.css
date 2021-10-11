@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('fondo.jpg');
+}
+.form_register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.form_register h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.form_register h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.form_register h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.controls {
+    width: 100%;
+    background:#24303c;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+.color {
+    width: 100%;
+    background:#24303c;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+.tallas {
+    width: 19%;
+    background:#24303c;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+.tallass {
+    width:18.5%;
+    background:#24303c;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10spx;
+    margin-left: 5px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.form_register .botons {
+    width: 100%;
+    background:#1f53c5;
+    border: none;
+    padding: 12px;
+    color:white;
+    margin: 16px 0;
+    font-size:  16px; ;
+}
