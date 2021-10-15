@@ -91,21 +91,21 @@
             <thead>
                 <tr>
                     <th></th>
-                    <input class="tallas" type="number" name="talla" id="tallas" placeholder="T-S" pattern="[9-0]+">
+                    <input class="tallas" type="number" name="tallas" id="tallas" placeholder="T-S" onkeyup="sumar();">
                     <th></th>
-                    <input class="tallass" type="number" name="talla" id="tallam" placeholder="T-M" pattern="[9-0]+">
+                    <input class="tallass" type="number" name="tallam" id="tallam" placeholder="T-M" onkeyup="sumar();">
                     <th></th>
-                    <input class="tallass" type="number" name="talla" id="tallal" placeholder="T-L" pattern="[9-0]+">
+                    <input class="tallass" type="number" name="tallal" id="tallal" placeholder="T-L" onkeyup="sumar();">
                     <th></th>
-                    <input class="tallass" type="number" name="talla" id="tallaxl" placeholder="T-XL" pattern="[9-0]+">
+                    <input class="tallass" type="number" name="tallaxl" id="tallaxl" placeholder="T-XL" onkeyup="sumar();">
                     <th></th>
-                    <input class="tallass" type="number" name="talla" id="tallau" placeholder="T-U" pattern="[9-0]+">
+                    <input class="tallass" type="number" name="tallau" id="tallau" placeholder="T-U" onkeyup="sumar();">
                 </tr>
             </thead>
         </table>
-        <input class="controls" type="number" name="suma" id="suma" placeholder="Suma Total" pattern="[9-0]+">
-        <input class="controls" type="number" name="precio" id="precio" placeholder="Ingrese el precio" pattern="[9-0]+">
-        <input class="controls" type="number" name="total" id="total" placeholder="Total a Cobrar" pattern="[9-0]+">
+        <input class="controls" type="number" name="suma" id="suma" placeholder="Suma Total" onkeyup="multiplicara();" readonly>
+        <input class="controls" type="number" name="precio" id="precio" placeholder="Ingrese el precio" onkeyup="multiplicara();">
+        <input class="controls" type="number" name="total" id="total" placeholder="Total a Cobrar" readonly>
         <h3>Tipo de Empaque</h3>
         <select class="controls" name="" id="sellado">
             <option>Tipo de Sellado</option>
@@ -143,10 +143,10 @@
             <option>BCP OSHIN</option>
             <option>OTROS</option>
         </select>
-        <input class="controls" type="number" name="importe" id="importe" placeholder="Ingrese el importe pagado" pattern="[9-0]+">
-        <input class="controls" type="number" name="saldo" id="saldo" placeholder="Saldo Pendiente" pattern="[9-0]+">
+        <input class="controls" type="number" name="importe" id="importe" placeholder="Ingrese el importe pagado" onkeyup="sumara();">
+        <input class="controls" type="number" name="saldo" id="saldo" placeholder="Saldo Pendiente" readonly>
         <input class="botons" type="submit" id="send" value="Enviar por WhatsApp">
     </section>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

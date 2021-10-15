@@ -1,3 +1,74 @@
+function sumar(){
+
+        var num1 = document.getElementById('tallas').value;
+        var num2 = document.getElementById('tallam').value;
+        var num3 = document.getElementById('tallal').value;
+        var num4 = document.getElementById('tallaxl').value;
+        var num5 = document.getElementById('tallau').value;
+    
+        if(num1 ==''){
+            num1 = 0
+        }
+        if(num2 ==''){
+            num2 = 0
+        }
+        if(num3 ==''){
+            num3 = 0
+        }
+        if(num4 ==''){
+            num4 = 0
+        }
+        if(num5 ==''){
+            num5 = 0
+        }
+    
+        var sumar = dividir((multiplicar(num1) + multiplicar(num2) + multiplicar(num3) + multiplicar(num4) + multiplicar(num5)));
+    
+        document.getElementById('suma').value = sumar.toFixed(2);
+    
+    }
+    
+    function multiplicara(){
+    
+        var num6 = document.getElementById('suma').value;
+        var num7 = document.getElementById('precio').value;
+    
+        var multiplicara = ((num6*1) * (num7*1))/1;
+    
+        document.getElementById('total').value = multiplicara.toFixed(2);
+    
+    }
+    
+    function sumara(){
+    
+        var num8 = document.getElementById('total').value;
+        var num9 = document.getElementById('importe').value;
+    
+        var sumara = num8 - num9;
+    
+        document.getElementById('saldo').value = sumara.toFixed(2);
+    
+    }
+    
+    function multiplicar(num1){
+        return num1*1000;
+    }
+    function multiplicar(num2){
+        return num2*1000;
+    }
+    function multiplicar(num3){
+        return num3*1000;
+    }
+    function multiplicar(num4){
+        return num4*1000;
+    }
+    function multiplicar(num5){
+        return num5*1000;
+    }
+    
+    function dividir(num1){
+        return num1/1000;
+    }
 const evento=document.getElementById('send')
 const enviarFormulario =() => {
         let cliente = document.getElementById('cliente').value;
